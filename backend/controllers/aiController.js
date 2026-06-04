@@ -50,7 +50,7 @@ Khách nói: "${text}"
 `;
 
     // 3. Gọi Gemini Model
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
     const result = await model.generateContent(prompt);
 
     let aiResponse = result.response.text().trim();
